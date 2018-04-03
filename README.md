@@ -32,5 +32,14 @@ dotnet add package.Microsoft.AspNetCore.Authentication.JwtBearer"Jwt
 
 ### 5 Add Settings to JSON File and Read the Settings
 ```
-
+public JwtSettings GetJwtSettings(){
+  JwtSettings settings = new JwtSettings();
+  settings.Key = Configuration["JwtSettings:key"];
+  settings.Audience = Configuration["JwtSettings:audience"]'
+  return settings;
+}
 ```
+
+
+### 6 How to Setup Authentication in the Web API Project
+
