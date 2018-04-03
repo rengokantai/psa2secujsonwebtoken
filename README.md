@@ -2,6 +2,7 @@
 
 
 ## 6. Use JSON Web Tokens to Secure Web API Methods
+### 2 Add Authorize Attribute
 ```
 using System.tas
 using Microsoft.AspNetCore.Mvc;
@@ -23,3 +24,13 @@ namespace PtcApi.Controllers {
 }
 ```
 
+### 3 Add JWT Packages to Web API Project
+```
+dotnet add package System.IdentityModel.Token.Jwt
+dotnet add package.Microsoft.AspNetCore.Authentication.JwtBearer"Jwt
+```
+
+### 5 Add Settings to JSON File and Read the Settings
+```
+
+```
